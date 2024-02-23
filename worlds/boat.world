@@ -5,19 +5,19 @@
     <include>
       <uri>model://sun</uri>
     </include>
-<!--     <include>
+    <!--<include>
       <uri>model://water_level</uri>
-    </include> -->
+    </include>-->
     <include>
       <uri>model://ocean</uri>
     </include>
     <model name="boat">
-    <pose>0 0 0 0 0 0.4</pose>
-     <include>
+      <pose>0 0 0 0 0 0</pose>
+      <include>
         <uri>model://boat</uri>
       </include>
-               <!-- add new camera -->
-      <link name='camera'>
+      <!-- add new camera -->
+      <!-- <link name='camera'>
         <pose>0 -0.01 2.0 1.91986 0 1.57</pose>
         <inertial>
           <pose>0 0 0 0 0 0</pose>
@@ -62,12 +62,12 @@
               </camera>
               <always_on>1</always_on>
               <update_rate>10</update_rate>
-              <visualize>true</visualize>
+              <visualize>true</visualize> -->
 
              <!--  <plugin name="irlock" filename="libArduCopterIRLockPlugin.so">
                   <fiducial>irlock_beacon_01</fiducial>
               </plugin> -->
-              <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+              <!-- <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
               <alwaysOn>true</alwaysOn>
               <updateRate>0.0</updateRate>
               <cameraName>webcam</cameraName>
@@ -84,7 +84,7 @@
 
         </sensor>
 
-      </link>
+      </link> -->
 
       <!-- attach camera -->
       <joint type="revolute" name="base_camera_joint">
